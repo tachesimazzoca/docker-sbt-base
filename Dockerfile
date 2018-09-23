@@ -1,7 +1,7 @@
 FROM openjdk:8u181
 
-ARG scalaVersion
-ARG sbtVersion
+ARG scalaVersion="2.12.6"
+ARG sbtVersion="1.2.3"
 
 WORKDIR /tmp
 RUN curl -LO https://dl.bintray.com/sbt/debian/sbt-"${sbtVersion}".deb && \
